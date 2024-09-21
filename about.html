@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
+    <style>
+        /* General Page Styles */
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items at the top */
+            padding: 20px;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 400px; /* Set a max width to encourage horizontal layout */
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 10px; /* Add margin between cards */
+            flex: 1; /* Allow cards to grow */
+            min-width: 300px; /* Set a minimum width */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #2980b9;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .card ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card ul li:before {
+            content: "✔";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            main {
+                padding: 10px;
+            }
+
+            .card {
+                padding: 20px;
+                margin: 10px 0; /* Margin for vertical stacking on small screens */
+            }
+
+            nav ul li a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About This Weather App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Website Designer</h2>
+            <img src="profile.png" alt="Mansoor Khan">
+            <p>This weather app was designed and developed by <strong>Mansoor Khan</strong>. It offers real-time weather updates and features a user-friendly interface for easy navigation.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>User-friendly interface</li>
+                <li>Responsive design for all devices</li>
+                <li>Real-time weather data from OpenWeatherMap API</li>
+                <li>Weather forecast for current and upcoming days</li>
+            </ul>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>OpenWeatherMap API</li>
+                <li>Responsive design principles</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Weather App by Mansoor Khan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
